@@ -35,6 +35,16 @@
     <!--[if lt IE 8]>
     <script src="assets/plugins/modernizr/modernizr.min.js"></script>
     <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108454364-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108454364-1');
+    </script>
 </head>
 
 <body id="page-top">
@@ -296,7 +306,7 @@
                                 <img src="assets/images/profile.jpg" alt="profile image" class="img-responsive"/>
 
                                 <div class="profile-btn-download">
-                                    <a href="#" class="btn btn-medium background-color font-family-alt text-large text-uppercase text-white">
+                                    <a href="TrongNguyen_Resume.pdf" class="btn btn-medium background-color font-family-alt text-large text-uppercase text-white">
                                         <i class="icon-File-Download font-weight-700"></i> Download Resume
                                     </a>
                                 </div>
@@ -437,19 +447,23 @@
                                 </li>
 
                                 <li class="padding-1-5 no-padding-rl">
-                                    <a href="#" data-filter=".character-design" class="display-inline-block">Frontend</a>
+                                    <a href="#" data-filter=".front-end" class="display-inline-block">Frontend</a>
                                 </li>
 
                                 <li class="padding-1-5 no-padding-rl">
-                                    <a href="#" data-filter=".digital-art" class="display-inline-block">Backend</a>
+                                    <a href="#" data-filter=".back-end" class="display-inline-block">Backend</a>
                                 </li>
 
                                 <li class="padding-1-5 no-padding-rl">
-                                    <a href="#" data-filter=".illustration" class="display-inline-block">DevOps</a>
+                                    <a href="#" data-filter=".devops" class="display-inline-block">DevOps</a>
                                 </li>
 
                                 <li class="padding-1-5 no-padding-rl">
-                                    <a href="#" data-filter=".painting" class="display-inline-block">Scientific</a>
+                                    <a href="#" data-filter=".scientific" class="display-inline-block">Scientific</a>
+                                </li>
+
+                                <li class="padding-1-5 no-padding-rl">
+                                    <a href="#" data-filter=".foundation" class="display-inline-block">Foundation</a>
                                 </li>
                             </ul>
                         </div>
@@ -461,14 +475,14 @@
                         <div class="projects background-gray-light width-100">
 
                             <!-- Project Item Start -->
-                            <div class="item painting"
+                            <div class="item front-end"
                                 data-project-title="Xplore-It"
                                 data-project-about="This app represents my essential thinking in designing the front-end side of web apps: minimal (yet meet all design requirements), well-structured (in terms of code quality), and performant.
 
                                 I really enjoyed coding this app, especially the code structure and functionalities.
 
                                 Introduction: this is a single page web app features interesting places around a selected neighborhood. The app pull data from multiple resources (Yelp, Foursquare and Twitter) to provide users with an insightful view of the surrounding neighborhood. The app is fully responsive for all display types: mobiles, tablets and monitors. The tech stack includes Knockout.js for MVVM pattern, Bootstrap for UI and Google API for maps and locations. The app is a pleasure to checkout: minimal design, performant and fully functional."
-                                data-project-img="assets/images/projects/project-xplore-it.png"
+                                data-project-img="assets/images/projects/project-xplore-it.jpg"
                                 data-project-link="https://www.behance.net/gallery/38763759/mariana-nolasco-2d">
 
                                 <span class="hover-bg"></span>
@@ -511,10 +525,10 @@
                             </div>
                             <!-- //.item -->
 
-                            <div class="item digital-art illustration"
+                            <div class="item back-end front-end"
                                 data-project-title="Sport Catalog"
                                 data-project-about="An e-Catalog displays a collection of sport gears. Data is stored in database and served via a web app interface. Item data modification is allowed for authenticated users. Social login and registration are supported. The stack used is Python, Flask, SQLAlchemy and PostgreSQL. Documentation is carefully constructed and beautifully presented by Apiary. As a note, Flask is a lighter framework as compared to Django. It is ideal for small to moderate sized apps."
-                                data-project-img="assets/images/projects/02.jpg"
+                                data-project-img="assets/images/projects/project-catalog.jpg"
                                 data-project-link="https://www.behance.net/gallery/33544331/Portraits-2">
 
                                 <span class="hover-bg"></span>
@@ -557,7 +571,7 @@
                             </div>
                             <!-- //.item -->
 
-                            <div class="item character-design"
+                            <div class="item devops"
                                 data-project-title="Linux Server Configuration"
                                 data-project-about="
                                 This is a project to demo my system administration skills which I rely on to deliver developed web apps to the public. Though some specific tools are mentioned in the project, the underlying understanding could be applied to other tools (NginX, UWSGI, MySQL instead of Apache2, Mod_WSGI, PostgreSQL).
@@ -606,7 +620,7 @@
                             </div>
                             <!-- //.item -->
 
-                            <div class="item digital-art painting"
+                            <div class="item front-end"
                                 data-project-title="Tictactoe Game"
                                 data-project-about="The classic tictactoe implemented in Javascript and interface built by Bootstrap. Though appeared to be a simple game, implementing it taught me one thing or two about events and async functions. I also learnt about the minmax algorithm and had a chance to apply dynamic programming technique. I extended the board size to an arbitrary number (n rows by m columns). My Tictactoe bot is unbeatable up to 4 by 4 sized games and can put up a good fight at bigger games."
                                 data-project-img="assets/images/projects/project-tictactoe.png"
@@ -652,7 +666,7 @@
                             </div>
                             <!-- //.item -->
 
-                            <div class="item illustration"
+                            <div class="item back-end"
                                 data-project-title="PairColumbus on SQL"
                                 data-project-about="A project to present and brush up my SQL skill in PostgreSQL flavor. The datasets for querying and analysis, which were currated from multiple sources, come from awesome PairColumbus guys. The topics range from analyzing the violence level in Hollywood movies, to compensation discussion in tech industry (pulled from Twitter feeds), and Donald Trump business empire, pre-president term."
                                 data-project-img="assets/images/projects/project-sql.png"
@@ -698,7 +712,7 @@
                             </div>
                             <!-- //.item -->
 
-                            <div class="item digital-art character-design"
+                            <div class="item foundation"
                                 data-project-title="Stanford-Coursera Algorithms"
                                 data-project-about="This repo houses all of the projects that I extensively studied, completed and documented for the Stanford - Coursera Specialization on algorithms by Prof. Tim Roughgarden. The curriculum is substantial and provides a great deal of information from essential techniques such as efficient sorting, to fundamental data structures, to graph theory, divide and conquer, dynamic programming, and even an overview of difficult np-complete / np-hard problems. The whole specialization, which comprises 4 courses and took me 3 months, solidified my computer science knowledge. The courses really pushed me hard, but I feel acomplished and enlightened on the day of completion."
                                 data-project-img="assets/images/projects/project-algorithms.jpg"
@@ -744,7 +758,7 @@
                             </div>
                             <!-- //.item -->
 
-                            <div class="item painting"
+                            <div class="item front-end"
                                 data-project-title="KBS App"
                                 data-project-about="Originally ordered by Atlantic Technologies Ltd. as a front end to serve its online services in helping users search great doctors according to certain constraints. This project was later open-sourced under company permissions. The development team has 3 members including one Javascript specialist (Hung), one UI/UX expert (An) and me (Trong Nguyen) functioning as both a seasonal frontend developer and a coordinator. The tech stack involves Angular 1 framework, Bootstrap UI, GruntJS task runner, Yeoman scaffolder, Bower package manager and NginX web server. This project was my first experience with real-life web development. My contribution was around 10% overall, mainly in UI, content, app features and deployment. I enjoyed building it pretty much."
                                 data-project-img="assets/images/projects/project-kbs-app.jpg"
@@ -790,7 +804,7 @@
                             </div>
                             <!-- //.item -->
 
-                            <div class="item digital-art illustration"
+                            <div class="item back-end"
                                 data-project-title="KBS REST API"
                                 data-project-about="The REST API for khambacsi.com, a healthcare info provider. Originally ordered as part of a backend project, the other part being database-related, by Atlantic Technologies Ltd. It was subsequently open-sourced under the company permission. The app provides a REST API to search for doctors, subjected to certain constraints such as names, locations and the specialty of concern. The API also provides a simple mechanism to quickly diagnose popular health issues given a symptom database. Social login is supported and can be made mandatory to access the API. Authentication is token-based and completely RESTful. The app was primarily built with Django and Django Rest Framework. Database could be configured to work separately, of any type (SQLite, PostgreSQL, mySQL). SQLite3 was chosen here for prototyping and PostgreSQL in production. uWSGI and NginX were selected to serve the app server side."
                                 data-project-img="assets/images/projects/project-kbs-api.png"
@@ -835,10 +849,10 @@
                                 <!-- //.row -->
                             </div>
 
-                            <div class="item painting"
+                            <div class="item scientific"
                                 data-project-title="FLYH"
                                 data-project-about="A CFD (computational fluid dynamics) simulation program written in C/C++. The program solves Navier-Stokes equations using Arbitrary Lagrangian-Eulerian method, with GFD (Generalized Finite Difference) spatial discretization scheme. The code was written to be multi-purposed but its core strengths are both 3D/2D capable and its moving mesh systems. Thus it is mainly intended for dynamic problems such as moving / rotating cylinders, flying objects, flapping wings, etc. The program was parallelized by OpenMP, usually run with 16 or 32 cores to drastically reduce computation time."
-                                data-project-img="assets/images/projects/project-flyh-3.png"
+                                data-project-img="assets/images/projects/project-flyh-3.jpg"
                                 data-project-link="https://www.behance.net/gallery/36279473/abigail-character-design">
 
                                 <span class="hover-bg"></span>
@@ -881,10 +895,10 @@
                             </div>
                             <!-- //.item -->
 
-                            <div class="item painting"
+                            <div class="item scientific"
                                 data-project-title="FSI-Solver"
                                 data-project-about="A scientific simulation package that aims to solve sophisticated FSI (Fluid-structure interaction) problems where we analyze the aerodynamics of structurally deformable moving objects. Due to the complex nature of modeled phenomena, the code incorporated multiple acceleration techonoligies such as multi-thread and GPU (e.g. CUDA) to increase computation power. This simulation package was part of a Defence Research Program and was developed for 2 years."
-                                data-project-img="assets/images/projects/project-fsi-solver.png"
+                                data-project-img="assets/images/projects/project-fsi-solver.jpg"
                                 data-project-link="https://www.behance.net/gallery/36279473/abigail-character-design">
 
                                 <span class="hover-bg"></span>
@@ -1140,7 +1154,7 @@
                         04.
                     </span>
 
-                    <img src="assets/images/studio/xplore-it.png" alt=""/>
+                    <img src="assets/images/studio/project-xplore-it.jpg" alt=""/>
                 </div>
                 <!-- //.gallery-cell -->
 
@@ -1158,7 +1172,7 @@
                         06.
                     </span>
 
-                    <img src="assets/images/studio/06.jpg" alt=""/>
+                    <img src="assets/images/studio/project-kbs-api-2.jpg" alt=""/>
                 </div>
                 <!-- //.gallery-cell -->
 
@@ -1167,7 +1181,16 @@
                         07.
                     </span>
 
-                    <img src="assets/images/studio/07.jpg" alt=""/>
+                    <img src="assets/images/studio/project-flyh.jpg" alt=""/>
+                </div>
+                <!-- //.gallery-cell -->
+
+                <div class="gallery-cell">
+                    <span class="cell-number display-block font-weight-700 text-center title-large text-white">
+                        08.
+                    </span>
+
+                    <img src="assets/images/studio/project-flyh-2.jpg" alt=""/>
                 </div>
                 <!-- //.gallery-cell -->
 
@@ -1186,318 +1209,25 @@
 
 
     <!-- SECTION - MILESTONES START -->
-    <section id="milestones" class="section background-gray-light no-padding-bottom">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="row">
-                            <div class="milestones-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <span class="display-block font-weight-700 text-color title-extra-large-3">
-                                        9
-                                    </span>
+    <!-- <section id="milestones" class="section background-gray-light no-padding-bottom">
 
-                                    <span class="display-block text-medium text-uppercase">
-                                        Years Experience
-                                        <br>
-                                        in Creative Design
-                                    </span>
-                                </div>
-                            </div>
-                            <!-- //.milestones-item -->
-
-                            <div class="milestones-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <span class="display-block font-weight-700 text-color title-extra-large-3">
-                                        13
-                                    </span>
-
-                                    <span class="display-block text-medium text-uppercase">
-                                        Countries Visited
-                                        <br>
-                                        for Clients
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.milestones-item -->
-
-                            <div class="milestones-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <span class="display-block font-weight-700 text-color title-extra-large-3">
-                                        68%
-                                    </span>
-
-                                    <span class="display-block text-medium text-uppercase">
-                                        New Business
-                                        <br>
-                                        from Referrals
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.milestones-item -->
-
-                            <div class="milestones-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <span class="display-block font-weight-700 text-color title-extra-large-3">
-                                        50+
-                                    </span>
-
-                                    <span class="display-block text-medium text-uppercase">
-                                        Projects
-                                        <br>
-                                        Completed
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.milestones-item -->
-
-                            <div class="milestones-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <span class="display-block font-weight-700 text-color title-extra-large-3">
-                                        47%
-                                    </span>
-
-                                    <span class="display-block text-medium text-uppercase">
-                                        Current Project
-                                        <br>
-                                        Capacity
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.milestones-item -->
-
-                            <div class="milestones-item col-sm-4">
-                                <div class="inner-content font-family-alt text-center">
-                                    <span class="display-block font-weight-700 text-color title-extra-large-3">
-                                        1
-                                    </span>
-
-                                    <span class="display-block text-medium text-uppercase">
-                                        Time Bullied
-                                        <br>
-                                        by a Client
-                                    </span>
-                                </div>
-                                <!-- //.inner-content -->
-                            </div>
-                            <!-- //.milestones-item -->
-                        </div>
-                        <!-- //.row -->
-                    </div>
-                    <!-- //.col-md-12 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-    </section>
+    </section> -->
     <!-- //SECTION - MILESTONES END -->
 
 
 
     <!-- SECTION - TESTIMONIAL START -->
-    <section id="testimonial" class="section background-gray-light no-padding-bottom">
-        <div class="section-content">
-            <div class="testimonial-slider flexslider">
-                <div class="slides">
-                    <div class="item position-relative width-100">
-                        <div class="testimonial-image height-100 position-absolute">
-                            <img src="assets/images/testimonial/01.jpg" alt="" class="img-responsive"/>
-                        </div>
-                        <!-- //.testimonial-image -->
+    <!-- <section id="testimonial" class="section background-gray-light no-padding-bottom">
 
-                        <div class="testimonial-content height-100">
-                            <div class="display-table height-100">
-                                <div class="display-table-cell vertical-align-middle">
-                                    <p class="testimonial-quote display-block font-weight-300 title-extra-large">
-                                        Great creative thinking for the best solution. <span class="font-weight-400">Wanda</span> is by far the most professional and knowledgeable provider I worked with. I will hire her again :)
-                                    </p>
-
-                                    <p class="testimonial-author display-inline-block font-family-alt margin-3 no-margin-bottom no-margin-rl text-large text-uppercase title-underline">
-                                        Ridwan Kamil - Urban Studio
-                                    </p>
-                                </div>
-                                <!-- //.display-table-cell -->
-                            </div>
-                            <!-- //.display-table -->
-                        </div>
-                        <!-- //.testimonial-content -->
-                    </div>
-                    <!-- //.item -->
-
-                    <div class="item position-relative width-100">
-                        <div class="testimonial-image height-100 position-absolute">
-                            <img src="assets/images/testimonial/02.jpg" alt="" class="img-responsive"/>
-                        </div>
-                        <!-- //.testimonial-image -->
-
-                        <div class="testimonial-content height-100">
-                            <div class="display-table height-100">
-                                <div class="display-table-cell vertical-align-middle">
-                                    <p class="testimonial-quote display-block font-weight-300 title-extra-large">
-                                        <span class="font-weight-400">Wanda</span> technical knowledge and branding experience came together and resulted in a site that is not only catching and interesting, but also one that is user-friendly.
-                                    </p>
-
-                                    <p class="testimonial-author display-inline-block font-family-alt margin-3 no-margin-bottom no-margin-rl text-large text-uppercase title-underline">
-                                        Chairul Tanjung - Transmedia
-                                    </p>
-                                </div>
-                                <!-- //.display-table-cell -->
-                            </div>
-                            <!-- //.display-table -->
-                        </div>
-                        <!-- //.testimonial-content -->
-                    </div>
-                    <!-- //.item -->
-
-                    <div class="item position-relative width-100">
-                        <div class="testimonial-image height-100 position-absolute">
-                            <img src="assets/images/testimonial/03.jpg" alt="" class="img-responsive"/>
-                        </div>
-                        <!-- //.testimonial-image -->
-
-                        <div class="testimonial-content height-100">
-                            <div class="display-table height-100">
-                                <div class="display-table-cell vertical-align-middle">
-                                    <p class="testimonial-quote display-block font-weight-300 title-extra-large">
-                                        As always <span class="font-weight-400">Wanda</span> did an excellent job in just few hours. Great communication and fast excecution. Thanks for great work :)
-                                    </p>
-
-                                    <p class="testimonial-author display-inline-block font-family-alt margin-3 no-margin-bottom no-margin-rl text-large text-uppercase title-underline">
-                                        Eka Sari Lorena - Lorena Group
-                                    </p>
-                                </div>
-                                <!-- //.display-table-cell -->
-                            </div>
-                            <!-- //.display-table -->
-                        </div>
-                        <!-- //.testimonial-content -->
-                    </div>
-                    <!-- //.item -->
-
-                    <div class="item position-relative width-100">
-                        <div class="testimonial-image height-100 position-absolute">
-                            <img src="assets/images/testimonial/04.jpg" alt="" class="img-responsive"/>
-                        </div>
-                        <!-- //.testimonial-image -->
-
-                        <div class="testimonial-content height-100">
-                            <div class="display-table height-100">
-                                <div class="display-table-cell vertical-align-middle">
-                                    <p class="testimonial-quote display-block font-weight-300 title-extra-large">
-                                        We called on <span class="font-weight-400">Wanda</span> to help us deliver on few projects with tight deadlines. She seamlessly integrated into our workflow and quickly became a key part of our team. Great job!
-                                    </p>
-
-                                    <p class="testimonial-author display-inline-block font-family-alt margin-3 no-margin-bottom no-margin-rl text-large text-uppercase title-underline">
-                                        Wishnutama Kusubandio - Net Mediatama
-                                    </p>
-                                </div>
-                                <!-- //.display-table-cell -->
-                            </div>
-                            <!-- //.display-table -->
-                        </div>
-                        <!-- //.testimonial-content -->
-                    </div>
-                    <!-- //.item -->
-                </div>
-                <!-- //.slides -->
-
-                <div class="testimonial-slider-nav">
-                    <i class="nav-previous icon-Left display-block font-weight-700 text-center title-small position-absolute"></i>
-                    <i class="nav-next icon-Right display-block font-weight-700 text-center title-small position-absolute"></i>
-                </div>
-                <!-- //.testimonial-slider-nav -->
-            </div>
-            <!-- //.testimonial-slider -->
-        </div>
-        <!-- //.section-content -->
-    </section>
+    </section> -->
     <!-- //SECTION - TESTIMONIAL END -->
 
 
 
     <!-- SECTION - STATS START -->
-    <section id="stats" class="section background-gray-light no-padding-bottom">
-        <div class="section-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="text-center">
-                            <h3 class="section-title display-inline-block font-family-alt text-extra-large text-uppercase title-underline">
-                                Food Purchased & Consumed in a Week
-                            </h3>
-                        </div>
-                        <!-- //.text-center -->
+    <!-- <section id="stats" class="section background-gray-light no-padding-bottom">
 
-                        <div id="area-chart" class="area-chart-wrapper">
-                            <div class="area-chart-graph"></div>
-
-                            <div class="area-chart-data display-none">
-                                <div class="area-chart-label">
-                                    <span>Monday</span>
-                                    <span>Tuesday</span>
-                                    <span>Wednesday</span>
-                                    <span>Thursday</span>
-                                    <span>Friday</span>
-                                    <span>Saturday</span>
-                                    <span>Sunday</span>
-                                </div>
-                                <!-- //.area-chart-label -->
-
-                                <div class="area-chart-series">
-                                    <div class="series" data-legend="Pancakes">
-                                        <span>3</span>
-                                        <span>2</span>
-                                        <span>1</span>
-                                        <span>4</span>
-                                        <span>6</span>
-                                        <span>7</span>
-                                        <span>3</span>
-                                    </div>
-                                    <!-- //.series -->
-
-                                    <div class="series" data-legend="Doughnuts">
-                                        <span>2</span>
-                                        <span>3</span>
-                                        <span>5</span>
-                                        <span>8</span>
-                                        <span>7</span>
-                                        <span>2</span>
-                                        <span>3</span>
-                                    </div>
-                                    <!-- //.series -->
-
-                                    <div class="series" data-legend="Pizza">
-                                        <span>1</span>
-                                        <span>2</span>
-                                        <span>3</span>
-                                        <span>2</span>
-                                        <span>2</span>
-                                        <span>1</span>
-                                        <span>3</span>
-                                    </div>
-                                    <!-- //.series -->
-                                </div>
-                                <!-- //.area-chart-series -->
-                            </div>
-                            <!-- //.area-chart-data -->
-                        </div>
-                        <!-- //.area-chart-wrapper -->
-                    </div>
-                    <!-- //.col-md-10 -->
-                </div>
-                <!-- //.row -->
-            </div>
-            <!-- //.container -->
-        </div>
-        <!-- //.section-content -->
-    </section>
+    </section> -->
     <!-- //SECTION - STATS END -->
 
 
