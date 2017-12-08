@@ -1,1 +1,1 @@
-cp -rf assets index.html dist/
+cp -rf assets index.html cfd_gallery.html dist/
